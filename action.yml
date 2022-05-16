@@ -1,0 +1,12 @@
+name: action-helm-for-eks
+author: kumojin
+description: A Github action for running helm for EKS
+branding:
+  icon: package
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+inputs:
+  args:
+    description: helm command
+    required: true
