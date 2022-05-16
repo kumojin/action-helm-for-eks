@@ -3,6 +3,7 @@ author: kumojin
 description: A Github action for running helm for EKS
 branding:
   icon: package
+  color: blue
 runs:
   using: 'docker'
   image: 'Dockerfile'
