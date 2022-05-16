@@ -10,12 +10,12 @@ Based on [alpine/k8s](https://hub.docker.com/r/alpine/k8s) image with Helm, helm
       uses: aws-actions/amazon-ecr-login@v1
     
     - name: Show diff
-      uses: kumojin/action-helm-for-eks@master
+      uses: kumojin/action-helm-for-eks@main
       with:
         args: diff upgrade -f custom.values.yml --set image.tag=$GITHUB_SHA my-release my-chart 
     
     - name: Deploy prod
-      uses: kumojin/action-helm-for-eks@master
+      uses: kumojin/action-helm-for-eks@main
       env:
         CLUSTER_NAME: my-cluster
         AWS_REGION: us-east-1
